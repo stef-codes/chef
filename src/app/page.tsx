@@ -1,7 +1,7 @@
-import { generate } from "@/components/generate";
+import { Recipe } from "@/components/recipe";
 
 export default function Home() {
   return 
-    <generate />;
+    <Recipe />;
 
 }
