@@ -42,6 +42,12 @@ export function Recipe() {
     setSavedRecipes([...savedRecipes, recipe]);
   };
 
+  const handleSubmit = () => {
+    // Implement your submit logic here
+    console.log("Submitting recipes...");
+    // Example: You can call an API or perform any other action here
+  };
+
   return (
     <div className="w-full max-w-4xl mx-auto py-12 px-4 md:px-6">
       <header className="flex justify-between items-center mb-8">
@@ -99,7 +105,7 @@ export function Recipe() {
           />
         </div>
         <div>
-          <Button className="w-full">Generate Recipes</Button>
+          <Button className="w-full" onClick={handleSubmit}>Generate Recipes</Button>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {savedRecipes.map((recipe, index) => (
