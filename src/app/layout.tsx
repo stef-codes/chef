@@ -4,8 +4,6 @@ import { DM_Sans } from 'next/font/google'
 import { Space_Mono } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import './globals.css'
-import { LayoutProps } from '../../.next/types/app/layout'
-
 
 
 
