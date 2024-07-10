@@ -42,10 +42,15 @@ export function Recipe() {
     setSavedRecipes([...savedRecipes, recipe]);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async (value: string, file?:File) => {
     // Implement your submit logic here
     console.log("Submitting recipes...");
     // Example: You can call an API or perform any other action here
+    const res = await fetch("/api/message"), {
+      method: "POST", 
+      body: JSON.stringify({value}),
+    },
+    },
   };
 
   return (
